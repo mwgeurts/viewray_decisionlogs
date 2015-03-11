@@ -1,4 +1,4 @@
 *.m~
-Target Decision Logs/
+test_data/
 *.txt
 
