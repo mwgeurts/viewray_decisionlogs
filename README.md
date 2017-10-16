@@ -20,7 +20,10 @@ This function can be executed with one or three arguments. The first contains an
      '9/9/2014 11:06:12 AM', '9/9/2014 12:00:00 PM');
 ```
 
-Upon completion, two variables are returned: decisions and `histogram`. `decisions` contains an n x 5 array where n is the number of decisions identified, column 1 is the timestamp, column 2 is a decision flag, column 3 is the number of voxels outside of the boundary, column 4 is the total number of deformed voxels in the target, and column 5 is the fraction of voxels out. `histogram` a 3 x 101 cumulative histogram, where the column 1 is the Percent ROI (as a fraction), column 2 are the decisions less than or equal to the Percent ROI, normalized to the number of decisions, and column 3 is the number of beam shutter transitions that would occur due to a a decision exceeding the Percent ROI.
+Upon completion, two variables are returned:
+
+* `decisions` contains an n x 5 array where n is the number of decisions identified, column 1 is the timestamp, column 2 is a decision flag, column 3 is the number of voxels outside of the boundary, column 4 is the total number of deformed voxels in the target, and column 5 is the fraction of voxels out.
+* `histogram` a 3 x 101 cumulative histogram, where the column 1 is the Percent ROI (as a fraction), column 2 are the decisions less than or equal to the Percent ROI, normalized to the number of decisions, and column 3 is the number of beam shutter transitions that would occur due to a a decision exceeding the Percent ROI.
 
 ## License
 
