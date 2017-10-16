@@ -7,7 +7,7 @@ function [decisions, plotdata] = ParseDecisionLogs(varargin)
 % would occur (assuming a zero second wait time) due to the decision logs.
 %
 % The following variables are required for proper execution: 
-% 	varargin{1}: input string containing the directory which stores the 
+%   varargin{1}: input string containing the directory which stores the 
 %       VrSvcDPWinService logs
 %   varargin{2} (optional): start date and time (as a string) for the
 %       treatment delivery
