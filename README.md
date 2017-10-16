@@ -25,28 +25,3 @@ Upon completion, two variables are returned: decisions and `histogram`. `decisio
 ## License
 
 Released under the GNU GPL v3.0 License.  See the [LICENSE](LICENSE) file for further details.
-
-
-
-This is a works in progress. Check back for more changes soon!
-
-ParseDecisionLogs extracts ViewRay gating log information from a
-% delivered treatment using the VrSvcDPWinService logs stored on the TPDS.
-% Either one or three variables can be provided, as detailed below.  The 
-% data is processed to estimate the "duty cycle" for the treatment
-% delivery and number of beam on/off/on transitions, or beam shutters that
-% would occur (assuming a zero second wait time) due to the decision logs.
-%
-% The following variables are required for proper execution: 
-% 	varargin{1}: input string containing the directory which stores the 
-%       VrSvcDPWinService logs
-%   varargin{2} (optional): start date and time (as a string) for the
-%       treatment delivery
-%   varargin{3} (optional): end stop date and time for the treatment 
-%
-% The following variables are returned upon succesful completion:
-% 	
-%
-% The following is an example of how to call this function:
-%   [decisions, histogram] = ParseDecisionLogs('./Target Decision Logs', ...
-%       '9/9/2014 11:06:12 AM', '9/9/2014 12:00:00 PM');
